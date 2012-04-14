@@ -124,7 +124,9 @@ class Command(BaseCommand):
                                     professor=prof,description="",name=title,section=section
                                 )
                                 classobj2.save()
-                                deptObject.classes.add(classobj1,classobj2).save()
+                                deptObject.classes.add(classobj1)
+                                deptObject.classes.add(classobj2)
+                                deptObject.save()
                             elif len(loc) is 3:
                                 pass
                             else:

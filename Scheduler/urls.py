@@ -10,6 +10,7 @@ urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'Scheduler.views.index'),
     url(r'^ajax/getcourses/(?P<deptID>\d*)$','Scheduler.views.getCourses'),
+    url(r'^ajax/courses/$','Scheduler.views.courseList'),
     url(r'^static/(?P<path>.*)$', 'django.views.static.serve',
             {'document_root':settings.STATIC_ROOT}),
     # url(r'^Scheduler/', include('Scheduler.foo.urls')),

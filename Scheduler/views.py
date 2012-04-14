@@ -10,7 +10,7 @@ from django import forms
 from django.forms import ModelForm
 
 class DepartmentForm(forms.Form):
-    department = forms.ModelChoiceField(queryset=Department.objects.all())
+    department = forms.ModelChoiceField(queryset=Department.objects.exclude(classes=None))
 
 def getCourses(request,deptID):
     department = Department.objects.filter(id=deptID)[0]
@@ -19,6 +19,16 @@ def getCourses(request,deptID):
         course['id'] = ClassObject.objects.filter(courseNumber=course['courseNumber'])[0].id
     print courses
     return HttpResponse(simplejson.dumps(courses))
+
+def courseList(request):
+    courses = list()
+    for i in range(0,100):
+        print "course"+str(i)
+        try:
+            courses.append(request.POST["course"+str(i)])
+        except:
+            break
+    return HttpResponse(courses)
 
 def index(request):
     c = RequestContext(request)

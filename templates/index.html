@@ -5,6 +5,9 @@
 <head>
     {% bootstrap_css %}
     <script src="/static/jquery-1.7.2.min.js"></script>
+    <script>
+       $.classList = [];
+    </script>
     {% bootstrap_custom_less "/lib/bootstrap_custom.less" %}
     $(".collapse").collapse()
     <title>Tufts Scheduler</title>
@@ -35,9 +38,9 @@
         <div class="span7">
         <div class="hero-unit">
             <button class="btn btn-danger" data-toggle="collapse"
-                data-target="#persEvent">Step 1: Personal Events
+                data-target="#persEvent" onclick="$('#persEvent').slideToggle()">Step 1: Personal Events
             </button>
-            <div id="persEvent" class="collapse in">
+            <div id="persEvent" class="collapse in" style="display:none" >
                 <h2>Step 1: Personal Events</h2>
                 <h3>Add any personal events to the calendar so we can include them in your schedule.</h3>
                 <p>Quick Add</p>
@@ -74,26 +77,45 @@
                     <h3>Select the class.</h3>
                     <form action="">
                         <select name="class" id="id_course">
-                            <option value="Comp40">Comp40</option>
-                            <option value="Comp120">Comp120</option>
                         </select>
+
                         <h3>Class Info</h3>
                         <p>Name:<br>Description:</p>
                         <form action="">
-                            <input type="button" value="Add Class">
+                            <input class="btn primary" id="addClass" type="button" value="Add Class">
                         </form>
+                        <script>
+                            $("#addClass").click(function (e) {
+                                val = $("#id_course option:selected").text()
+                                if (jQuery.inArray(val,$.classList) == -1 && val != "") {
+                                    $("#class_list").append("<li>"+val+"</li>");
+                                    $.classList.push(val)
+                                }
+                            });
+                        </script>
             </div>
 
             <div id="Class List">
                 <h2>List of Classes</h2>
                 <ul id="class_list">
-                    <li>Comp 40</li>
-                    <li>ELS 101</li>
+                </ul>
             </div>
 
             <form action="">
-                <input type="button" value="Magic">
+                <input id="magic" type="button" value="Magic" class="btn primary">
             </form>
+            <script>
+                $("#magic").click(function() {
+                    postCourse = {};
+                    for (i in $.classList) {
+                        postCourse["course"+i] = $.classList[i];
+                    }
+                    postCourse["csrfmiddlewaretoken"] = "{{ csrf_token }}"
+
+                    $.post('ajax/courses/',
+                            postCourse);
+                })
+            </script>
             </ul>
             </div>
         </div>
