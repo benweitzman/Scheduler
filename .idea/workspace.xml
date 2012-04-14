@@ -109,7 +109,7 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Scheduler/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="75" selection-start="742" selection-end="742" vertical-scroll-proportion="-4.909091">
+            <state line="34" column="85" selection-start="1227" selection-end="1227" vertical-scroll-proportion="-6.7090907">
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -120,14 +120,8 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="123" selection-start="1393" selection-end="1393" vertical-scroll-proportion="0.43269232">
-              <folding>
-                <marker date="1334396675000" expanded="true" signature="1343:1347" placeholder="..." />
-                <marker date="1334396675000" expanded="true" signature="1348:1371" placeholder="..." />
-                <marker date="1334396675000" expanded="true" signature="1372:1377" placeholder="..." />
-                <marker date="1334396675000" expanded="true" signature="1378:1388" placeholder="..." />
-                <marker date="1334396675000" expanded="true" signature="1394:1405" placeholder="..." />
-              </folding>
+            <state line="30" column="6" selection-start="809" selection-end="809" vertical-scroll-proportion="0.591716">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -578,7 +572,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Scheduler/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="75" selection-start="742" selection-end="742" vertical-scroll-proportion="-4.909091">
+        <state line="34" column="85" selection-start="1227" selection-end="1227" vertical-scroll-proportion="-6.7090907">
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -587,14 +581,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="123" selection-start="1393" selection-end="1393" vertical-scroll-proportion="0.43269232">
-          <folding>
-            <marker date="1334396675000" expanded="true" signature="1343:1347" placeholder="..." />
-            <marker date="1334396675000" expanded="true" signature="1348:1371" placeholder="..." />
-            <marker date="1334396675000" expanded="true" signature="1372:1377" placeholder="..." />
-            <marker date="1334396675000" expanded="true" signature="1378:1388" placeholder="..." />
-            <marker date="1334396675000" expanded="true" signature="1394:1405" placeholder="..." />
-          </folding>
+        <state line="30" column="6" selection-start="809" selection-end="809" vertical-scroll-proportion="0.591716">
+          <folding />
         </state>
       </provider>
     </entry>
