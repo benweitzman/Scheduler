@@ -4,56 +4,85 @@
 <html>
 <head>
     {% bootstrap_css %}
+    {% bootstrap_custom_less "/lib/bootstrap_custom.less" %}
+    $(".collapse").collapse()
     <title>Tufts Scheduler</title>
 </head>
 
 <body>
-{{ classes }}
-<h1>Tufts Scheduler</h1>
-<div id="Personal Event">
-
-    <h2>Step 1: Peronsal Events</h2>
-    <h3>Add any personal events to the calendar so we can include them in your schedule.</h3>
-    <p>Quick Add</p>
-    <input type="text" name="personal_event" placeholder="Wind Ensemble on Monday and Wednesday from 4:30 to 6:30"/>
-    <h3>Personal Events</h3>
-    <ul id="presonal_list">
-        <li>Wind Ensemble on Monday and Wednesday from 4:30 to 6:30</li>
-    </ul>
+<div class="topbar">
+    <div class="fill">
+        <div class="container">
+            <h3 class="brand">Tufts Scheduler</h3>
+            <div class="nav-collapse">
+            <p class="navbar-text pull-right">
+                Logged in as <a href="#">
+                    {% if user.is_authenticated %}
+                        {{ user.username }}
+                    {% else %}
+                        register
+                    {% endif %}
+                </a>
+            </p>
+        </div>
+    </div>
 </div>
 
-<div id="Add Classes">
-    <h2>Step 2: Add Classes</h2>
-    <h3>Select the department.</h3>
-    <form action="">
-        <select name="department">
-            <option value="Computer Science">Computer Science</option>
-            <option value="Other">Other</option>
-        </select>
-        <h3>Select the class.</h3>
-        <form action="">
-            <select name="class">
-                <option value="Comp40">Comp40</option>
-                <option value="Comp120">Comp120</option>
-            </select>
-            <h3>Class Info</h3>
-            <p>Name:<br>Description:</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="span7">
+        <div class="hero-unit">
+            <button class="btn btn-danger" data-toggle="collapse"
+                data-target="#persEvent">Step 1: Personal Events
+            </button>
+            <div id="persEvent" class="collapse in">
+                <h2>Step 1: Personal Events</h2>
+                <h3>Add any personal events to the calendar so we can include them in your schedule.</h3>
+                <p>Quick Add</p>
+                <input type="text" name="personal_event" placeholder="Wind Ensemble on Monday and Wednesday from 4:30 to 6:30"/>
+                <h3>Personal Events</h3>
+                <ul id="presonal_list">
+                    <li>Wind Ensemble on Monday and Wednesday from 4:30 to 6:30</li>
+                </ul>
+            </div>
+
+            <div id="addClasses">
+                <h2>Step 2: Add Classes</h2>
+                <h3>Select the department.</h3>
+                <form action="">
+                    <select name="department">
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <h3>Select the class.</h3>
+                    <form action="">
+                        <select name="class">
+                            <option value="Comp40">Comp40</option>
+                            <option value="Comp120">Comp120</option>
+                        </select>
+                        <h3>Class Info</h3>
+                        <p>Name:<br>Description:</p>
+                        <form action="">
+                            <input type="button" value="Add Class">
+                        </form>
+            </div>
+
+            <div id="Class List">
+                <h2>List of Classes</h2>
+                <ul id="class_list">
+                    <li>Comp 40</li>
+                    <li>ELS 101</li>
+            </div>
+
             <form action="">
-                <input type="button" value="Add Class">
+                <input type="button" value="Magic">
             </form>
+            </ul>
+            </div>
+        </div>
+        </div>
+    </div>
 </div>
-
-<div id="Class List">
-    <h2>List of Classes</h2>
-    <ul id="class_list">
-        <li>Comp 40</li>
-        <li>ELS 101</li>
-</div>
-
-<form action="">
-    <input type="button" value="Magic">
-</form>
-</ul>
 
 </body>
 </html>
