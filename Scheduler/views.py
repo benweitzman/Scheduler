@@ -17,4 +17,5 @@ def index(request):
     departments = Department.objects.all()
 
     return render_to_response("index.html",RequestContext(request,{"classes":classes,
-                                                                   "events":events}))
+                                                                   "events":events,
+                                                                   "departments",departments}))
