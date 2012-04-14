@@ -7,7 +7,15 @@ from Event.models import *
 def index(request):
     c = RequestContext(request)
     user = request.user
-    classes = ClassEvent.objects.filter(user=user)
-    events = PersonalEvent.objects.filter(user=user)
+    if user.is_authenticated():
+        classes = ClassEvent.objects.filter(user=user)
+        events = PersonalEvent.objects.filter(user=user)
+    else:
+        classes = None
+        events = None
+
+    departments = Department.objects.all()
+
     return render_to_response("index.html",RequestContext(request,{"classes":classes,
-                                                                   "events":events}))
+                                                                   "events":events,
+                                                                   "departments",departments}))
