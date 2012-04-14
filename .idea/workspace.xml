@@ -106,19 +106,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Scheduler/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="42" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="5" column="0" selection-start="221" selection-end="221" vertical-scroll-proportion="0.13786764">
+              <folding>
+                <element signature="e#0#58#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="6" selection-start="126" selection-end="126" vertical-scroll-proportion="0.2662722">
+            <state line="9" column="6" selection-start="126" selection-end="126" vertical-scroll-proportion="-5.625">
               <folding />
             </state>
           </provider>
@@ -140,7 +142,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/Scheduler/urls.py" />
-        <option value="$PROJECT_DIR$/Scheduler/views.py" />
         <option value="$PROJECT_DIR$/Event/admin.py" />
         <option value="$PROJECT_DIR$/Scheduler/management/__init__.py" />
         <option value="$PROJECT_DIR$/Scheduler/management/commands/__init__.py" />
@@ -148,6 +149,7 @@
         <option value="$PROJECT_DIR$/Event/models.py" />
         <option value="$PROJECT_DIR$/Scheduler/settings.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/Scheduler/views.py" />
       </list>
     </option>
   </component>
@@ -520,25 +522,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Event/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="31" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Scheduler/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="9" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Scheduler/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="42" selection-start="101" selection-end="101" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -559,15 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Event/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="25" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Scheduler/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="120" column="33" selection-start="4339" selection-end="4339" vertical-scroll-proportion="0.0">
@@ -577,8 +554,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="6" selection-start="126" selection-end="126" vertical-scroll-proportion="0.2662722">
+        <state line="9" column="6" selection-start="126" selection-end="126" vertical-scroll-proportion="-5.625">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Event/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="25" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Event/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="31" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scheduler/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="221" selection-end="221" vertical-scroll-proportion="0.13786764">
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
