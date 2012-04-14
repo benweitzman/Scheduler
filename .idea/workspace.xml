@@ -29,7 +29,7 @@
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Scheduler/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="33" selection-start="4339" selection-end="4339" vertical-scroll-proportion="0.0">
+            <state line="59" column="47" selection-start="2199" selection-end="2199" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -56,7 +56,7 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Event/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="25" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
+            <state line="35" column="26" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -67,7 +67,7 @@
       <file leaf-file-name="scrape.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Scheduler/management/commands/scrape.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="13" selection-start="1507" selection-end="1507" vertical-scroll-proportion="0.0">
+            <state line="81" column="42" selection-start="3680" selection-end="3680" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#65#0" expanded="true" />
               </folding>
@@ -100,28 +100,34 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Scheduler/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="9" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0">
+            <state line="11" column="66" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Scheduler/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="497" selection-end="497" vertical-scroll-proportion="0.41360295">
+            <state line="18" column="75" selection-start="742" selection-end="742" vertical-scroll-proportion="-4.909091">
               <folding>
-                <element signature="e#0#58#0" expanded="true" />
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="6" selection-start="126" selection-end="126" vertical-scroll-proportion="-5.625">
-              <folding />
+            <state line="39" column="123" selection-start="1393" selection-end="1393" vertical-scroll-proportion="0.43269232">
+              <folding>
+                <marker date="1334396675000" expanded="true" signature="1343:1347" placeholder="..." />
+                <marker date="1334396675000" expanded="true" signature="1348:1371" placeholder="..." />
+                <marker date="1334396675000" expanded="true" signature="1372:1377" placeholder="..." />
+                <marker date="1334396675000" expanded="true" signature="1378:1388" placeholder="..." />
+                <marker date="1334396675000" expanded="true" signature="1394:1405" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -141,20 +147,20 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Scheduler/urls.py" />
         <option value="$PROJECT_DIR$/Event/admin.py" />
         <option value="$PROJECT_DIR$/Scheduler/management/__init__.py" />
         <option value="$PROJECT_DIR$/Scheduler/management/commands/__init__.py" />
-        <option value="$PROJECT_DIR$/Scheduler/management/commands/scrape.py" />
-        <option value="$PROJECT_DIR$/Event/models.py" />
         <option value="$PROJECT_DIR$/Scheduler/settings.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/Scheduler/urls.py" />
+        <option value="$PROJECT_DIR$/Event/models.py" />
+        <option value="$PROJECT_DIR$/Scheduler/management/commands/scrape.py" />
         <option value="$PROJECT_DIR$/Scheduler/views.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="81" />
+    <option name="x" value="104" />
     <option name="y" value="22" />
     <option name="width" value="1153" />
     <option name="height" value="712" />
@@ -432,14 +438,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="81" y="22" width="1153" height="712" extended-state="0" />
+    <frame x="104" y="22" width="1153" height="712" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27873304" sideWeight="0.67116356" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27873304" sideWeight="0.67116356" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -522,10 +528,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Scheduler/urls.py">
+    <entry file="file://$PROJECT_DIR$/Event/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="9" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="5" column="31" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -536,52 +544,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Scheduler/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="47" selection-start="2199" selection-end="2199" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scheduler/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="66" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Scheduler/management/commands/scrape.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="13" selection-start="1507" selection-end="1507" vertical-scroll-proportion="0.0">
+        <state line="81" column="42" selection-start="3680" selection-end="3680" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#65#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Scheduler/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="33" selection-start="4339" selection-end="4339" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="6" selection-start="126" selection-end="126" vertical-scroll-proportion="-5.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Event/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="25" selection-start="579" selection-end="579" vertical-scroll-proportion="0.0">
+        <state line="35" column="26" selection-start="1060" selection-end="1060" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Event/admin.py">
+    <entry file="file://$PROJECT_DIR$/Scheduler/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="31" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0">
+        <state line="18" column="75" selection-start="742" selection-end="742" vertical-scroll-proportion="-4.909091">
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Scheduler/views.py">
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="497" selection-end="497" vertical-scroll-proportion="0.41360295">
+        <state line="39" column="123" selection-start="1393" selection-end="1393" vertical-scroll-proportion="0.43269232">
           <folding>
-            <element signature="e#0#58#0" expanded="true" />
+            <marker date="1334396675000" expanded="true" signature="1343:1347" placeholder="..." />
+            <marker date="1334396675000" expanded="true" signature="1348:1371" placeholder="..." />
+            <marker date="1334396675000" expanded="true" signature="1372:1377" placeholder="..." />
+            <marker date="1334396675000" expanded="true" signature="1378:1388" placeholder="..." />
+            <marker date="1334396675000" expanded="true" signature="1394:1405" placeholder="..." />
           </folding>
         </state>
       </provider>

@@ -4,6 +4,7 @@
 <html>
 <head>
     {% bootstrap_css %}
+    <script src="/static/jquery-1.7.2.min.js"></script>
     <title>Tufts Scheduler</title>
 </head>
 
@@ -25,13 +26,28 @@
     <h2>Step 2: Add Classes</h2>
     <h3>Select the department.</h3>
     <form action="">
-        <select name="department">
-            <option value="Computer Science">Computer Science</option>
-            <option value="Other">Other</option>
-        </select>
+       {{ departments}}
+        <script>
+            $("#id_department").change(function (e) {
+                if ($(this).val()) {
+                    $.get('ajax/getcourses/'+$(this).val(),
+                    function (response) {
+                        courses = $.parseJSON(response);
+                        $("#id_course").html("");
+                         for (i in courses) {
+                             console.log(courses[i]);
+                             newinner = $("#id_course").html();
+                             newinner += "<option value='"+courses[i].id+"'>"+courses[i].courseNumber+" - "+courses[i].name+"</option>";
+                             $("#id_course").html(newinner);
+
+                         }
+                    });
+                }
+            });
+        </script>
         <h3>Select the class.</h3>
         <form action="">
-            <select name="class">
+            <select name="class" id="id_course">
                 <option value="Comp40">Comp40</option>
                 <option value="Comp120">Comp120</option>
             </select>

@@ -41,6 +41,7 @@ class Command(BaseCommand):
             c.setopt(pycurl.POSTFIELDS, post)
             c.setopt(pycurl.URL, "https://webcenter.studentservices.tufts.edu/courses/subject_listing.asp")
             c.setopt(pycurl.POST, 1)
+            storage = StringIO()
             c.setopt(c.WRITEFUNCTION, storage.write)
             c.perform()
             c.close()
@@ -67,7 +68,9 @@ class Command(BaseCommand):
                     if not re.findall("NOT REGISTER", matches[key + 3]) and not re.findall("NOT REGISTER", matches[key+11]):
                         closed = strip(matches[key])
                         callnum = strip(matches[key + 1])
-                        course = strip(matches[key + 2])
+                        print matches[key+2]
+                        course = strip(matches[key + 2][:-3])
+                        section = strip(matches[key + 2][-3:])
                         title = strip(matches[key + 3])
                         days = strip(matches[key + 5])
                         if days == "":
@@ -92,13 +95,13 @@ class Command(BaseCommand):
                                 loc2 = loc[2]
                                 classobj1 = ClassObject.objects.create(days=days1,times=times1,locations=loc1,
                                         closed=closed,courseNumber=course,callNumber=callnum,
-                                        professor=prof,description="",name=title
+                                        professor=prof,description="",name=title,section=section
                                         )
                                 classobj1.save()
                                 deptObject.classes.add(classobj1)
                                 classobj2 = ClassObject.objects.create(days=days2,times=times2,locations=loc2,
                                     closed=closed,courseNumber=course,callNumber=callnum,
-                                    professor=prof,description="",name=title
+                                    professor=prof,description="",name=title,section=section
                                 )
                                 classobj2.save()
                                 deptObject.classes.add(classobj2)
@@ -113,12 +116,12 @@ class Command(BaseCommand):
                                 loc2 = loc[1]
                                 classobj1 = ClassObject.objects.create(days=days1,times=times1,locations=loc1,
                                     closed=closed,courseNumber=course,callNumber=callnum,
-                                    professor=prof,description="",name=title
+                                    professor=prof,description="",name=title,section=section
                                 )
                                 classobj1.save()
                                 classobj2 = ClassObject.objects.create(days=days2,times=times2,locations=loc2,
                                     closed=closed,courseNumber=course,callNumber=callnum,
-                                    professor=prof,description="",name=title
+                                    professor=prof,description="",name=title,section=section
                                 )
                                 classobj2.save()
                                 deptObject.classes.add(classobj1,classobj2).save()
@@ -127,7 +130,7 @@ class Command(BaseCommand):
                             else:
                                 classobj = ClassObject.objects.create(days=days[0]+"~"+days[1],
                                                                       times=times[0]+"~"+times[1],
-                                                                      closed=closed,
+                                                                      closed=closed,section=section,
                                         professor=prof,
                                 locations=loc[0]+"~"+loc[1],
                                 callNumber=callnum,
@@ -147,6 +150,7 @@ class Command(BaseCommand):
                                 callNumber=callnum,
                                 description="",
                                 name=title,
+                                section=section,
                                 courseNumber=course)
                             classobj.save()
                             deptObject.classes.add(classobj)

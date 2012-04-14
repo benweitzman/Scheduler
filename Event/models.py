@@ -30,7 +30,7 @@ class ClassObject(models.Model):
     locations = models.CharField(max_length=50)
     courseNumber = models.CharField(max_length=15)
     callNumber = models.CharField(max_length=7)
-    #section = models.CharField(max_length = 10)
+    section = models.CharField(max_length = 10)
     closed = models.BooleanField()
 
     def __unicode__(self):
@@ -47,4 +47,4 @@ class Department(models.Model):
     classes = models.ManyToManyField(ClassObject)
 
     def __unicode__(self):
-        return self.key
+        return self.title
