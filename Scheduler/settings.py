@@ -106,6 +106,7 @@ ROOT_URLCONF = 'Scheduler.urls'
 WSGI_APPLICATION = 'Scheduler.wsgi.application'
 
 TEMPLATE_DIRS = (
+    "templates",
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -123,6 +124,8 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'Event',
+    'Scheduler',
+    'bootstrapped',
 )
 
 # A sample logging configuration. The only tangible logging

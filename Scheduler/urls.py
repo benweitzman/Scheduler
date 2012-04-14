@@ -6,7 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'Scheduler.views.home', name='home'),
+    url(r'^$', 'Scheduler.views.index'),
     # url(r'^Scheduler/', include('Scheduler.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

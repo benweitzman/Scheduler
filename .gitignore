@@ -1,2 +1,5 @@
 .idea/*
 *.db
+*.pyc
+static/*
+admin/*
