@@ -22,7 +22,7 @@ var defaults = {
 
 	// display
 	defaultView: 'agendaWeek',
-	aspectRatio: 1,
+	aspectRatio: 1.3,
 	header: false,
 	weekends: false,
 	
@@ -37,7 +37,7 @@ var defaults = {
 	// current date
 	year: 2011,
 	month: 8,
-	date: 15,
+	date: 14,
 	
 	// event ajax
 	lazyFetching: true,

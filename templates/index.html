@@ -10,6 +10,19 @@
     </script>
     {% bootstrap_custom_less "/lib/bootstrap_custom.less" %}
     $(".collapse").collapse()
+    <link rel="stylesheet" type="text/css" href="static/js/fullcalendar/fullcalendar.css"/>
+    <script type="text/javascript" src='/static/js/fullcalendar/fullcalendar.js'></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#calendar').fullCalendar({
+            });
+        })
+    </script>
+    <style>
+        #cal{
+            width:600px;
+        }
+    </style>
     <title>Tufts Scheduler</title>
 </head>
 
@@ -32,7 +45,6 @@
         </div>
     </div>
 </div>
-
 <div class="container-fluid">
     <div class="row">
         <div class="span7">
@@ -40,6 +52,8 @@
             <button class="btn btn-danger" data-toggle="collapse"
                 data-target="#persEvent" onclick="$('#persEvent').slideToggle()">Step 1: Personal Events
             </button>
+            <input type="button" class="btn primary" onclick="$('#calendar').fullCalendar('renderEvent',{id:00154,title:'BIO blah',start: new Date(2011, 8 ,14, 13, 30), end:new Date(2011,8,14,17,00),backgroundColor:'#ff0000'},true);"/>
+
             <div id="persEvent" class="collapse in" style="display:none" >
                 <h2>Step 1: Personal Events</h2>
                 <h3>Add any personal events to the calendar so we can include them in your schedule.</h3>
@@ -113,12 +127,21 @@
                     postCourse["csrfmiddlewaretoken"] = "{{ csrf_token }}"
 
                     $.post('ajax/courses/',
-                            postCourse);
+                            postCourse,
+                    function (data) {
+                        events = $.parseJSON(data);
+                        for (x in events) {
+                            event = events[x];
+                            console.log(event.date)
+                            $("#calendar").fullCalendar('renderEvent',{id:event.id,title:event.title,start:new Date(2011,8,event.day,event.startHour,event.startMinute), end: new Date(2011,8,event.day,event.endHour,event.endMinute)},true)
+                        }
+                    });
                 })
             </script>
             </ul>
             </div>
         </div>
+        <div class="span13"> <div id="calendar" style="margin-top:30px"></div></div>
         </div>
     </div>
 </div>
