@@ -1,4 +1,7 @@
 .idea/*
 *.db
-*.pyc
 admin/*
+*.log
+*.pot
+*.pyc
+local_settings.py
