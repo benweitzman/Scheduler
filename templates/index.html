@@ -50,22 +50,23 @@
         <div class="span7">
         <div class="hero-unit">
             <button class="btn btn-danger" data-toggle="collapse"
-                data-target="#persEvent" onclick="$('#persEvent').slideToggle()">Step 1: Personal Events
+                data-target="#persEvent" onclick="$('#persEvent').slideDown();$('#addClasses').slideUp()">Step 1: Personal Events
             </button>
             <input type="button" class="btn primary" onclick="$('#calendar').fullCalendar('renderEvent',{id:00154,title:'BIO blah',start: new Date(2011, 8 ,14, 13, 30), end:new Date(2011,8,14,17,00),backgroundColor:'#ff0000'},true);"/>
 
-            <div id="persEvent" class="collapse in" style="display:none" >
+            <div id="persEvent" class="collapse in" >
                 <h2>Step 1: Personal Events</h2>
-                <h3>Add any personal events to the calendar so we can include them in your schedule.</h3>
-                <p>Quick Add</p>
-                <input type="text" name="personal_event" placeholder="Wind Ensemble on Monday and Wednesday from 4:30 to 6:30"/>
-                <h3>Personal Events</h3>
+                <h3>To add a personal event to the calendar click and drag in the timeslot and enter a title</h3>
+				<h3>Personal Events</h3>
                 <ul id="presonal_list">
                     <li>Wind Ensemble on Monday and Wednesday from 4:30 to 6:30</li>
                 </ul>
             </div>
 
-            <div id="addClasses">
+			<button class="btn btn-danger" data-toggle="collapse"
+				data-target="#addClasses" onclick="$('#addClasses').slideDown();$('#persEvent').slideUp()">Step 2: Add Classes
+			</button>
+            <div id="addClasses" class="collapse in" style="display:none">
                 <h2>Step 2: Add Classes</h2>
                 <h3>Select the department.</h3>
                 <form action="">
